@@ -169,6 +169,7 @@
                                     })();
 
                                     document.getElementById('contactForm').addEventListener('submit', function (e) {
+                                        $("#spinner").addClass("show");
                                         e.preventDefault();
                                         emailjs.send("service_gegv7b7", "template_lzzjt4c", {
                                             name: document.getElementById('name').value,
@@ -180,8 +181,10 @@
                                             .then(function (response) {
                                                 document.getElementById('formStatus').innerHTML = '<span class="text-success">Poruka je uspešno poslata!</span>';
                                                 document.getElementById('contactForm').reset();
+                                                $("#spinner").removeClass("show");
                                             }, function (error) {
                                                 document.getElementById('formStatus').innerHTML = '<span class="text-danger">Došlo je do greške. Pokušajte ponovo ili pošaljite e-mail klikom na ukonu iznad.</span>';
+                                                $("#spinner").removeClass("show");
                                             });
                                     });
                                 </script>
