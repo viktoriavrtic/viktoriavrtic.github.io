@@ -143,30 +143,36 @@
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" name="name" placeholder="Vaše ime" required>
+                                                <input type="text" class="form-control border-0" id="name" name="name"
+                                                    placeholder="Vaše ime" required>
                                                 <label for="name">Vaše ime</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" name="email" placeholder="Vaš email" required>
+                                                <input type="email" class="form-control border-0" id="email"
+                                                    name="email" placeholder="Vaš email" required>
                                                 <label for="email">Vaš email</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Naslov" required>
+                                                <input type="text" class="form-control border-0" id="subject"
+                                                    name="subject" placeholder="Naslov" required>
                                                 <label for="subject">Naslov</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Ostavite poruku ovde" id="message" name="message" style="height: 100px" required></textarea>
+                                                <textarea class="form-control border-0"
+                                                    placeholder="Ostavite poruku ovde" id="message" name="message"
+                                                    style="height: 100px" required></textarea>
                                                 <label for="message">Poruka</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Pošalji poruku</button>
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Pošalji
+                                                poruku</button>
                                         </div>
                                         <div class="col-12">
                                             <div id="formStatus" class="mt-2"></div>
@@ -176,11 +182,11 @@
                                 <!-- EmailJS SDK -->
                                 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
                                 <script>
-                                    (function(){
+                                    (function () {
                                         emailjs.init("S_GwigeIkeAob1J38"); // Zameni sa tvojim EmailJS user ID
                                     })();
 
-                                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                                    document.getElementById('contactForm').addEventListener('submit', function (e) {
                                         e.preventDefault();
                                         emailjs.send("service_gegv7b7", "template_lzzjt4c", {
                                             name: document.getElementById('name').value,
@@ -189,12 +195,12 @@
                                             message: document.getElementById('message').value,
                                             time: new Date().toLocaleString()
                                         })
-                                        .then(function(response) {
-                                            document.getElementById('formStatus').innerHTML = '<span class="text-success">Poruka je uspešno poslata!</span>';
-                                            document.getElementById('contactForm').reset();
-                                        }, function(error) {
-                                            document.getElementById('formStatus').innerHTML = '<span class="text-danger">Došlo je do greške. Pokušajte ponovo.</span>';
-                                        });
+                                            .then(function (response) {
+                                                document.getElementById('formStatus').innerHTML = '<span class="text-success">Poruka je uspešno poslata!</span>';
+                                                document.getElementById('contactForm').reset();
+                                            }, function (error) {
+                                                document.getElementById('formStatus').innerHTML = '<span class="text-danger">Došlo je do greške. Pokušajte ponovo ili pošaljite e-mail klikom na ukonu iznad.</span>';
+                                            });
                                     });
                                 </script>
                             </div>
