@@ -138,43 +138,65 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <form>
+                                <!-- Kontakt forma sa slanjem putem EmailJS -->
+                                <form id="contactForm">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name"
-                                                    placeholder="Vaše ime">
+                                                <input type="text" class="form-control border-0" id="name" name="name" placeholder="Vaše ime" required>
                                                 <label for="name">Vaše ime</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email"
-                                                    placeholder="Vaš email">
+                                                <input type="email" class="form-control border-0" id="email" name="email" placeholder="Vaš email" required>
                                                 <label for="email">Vaš email</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject"
-                                                    placeholder="Naslov">
+                                                <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Naslov" required>
                                                 <label for="subject">Naslov</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0"
-                                                    placeholder="Ostavite poruku ovde" id="message"
-                                                    style="height: 100px"></textarea>
+                                                <textarea class="form-control border-0" placeholder="Ostavite poruku ovde" id="message" name="message" style="height: 100px" required></textarea>
                                                 <label for="message">Poruka</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Pošalji
-                                                poruku</button>
+                                            <button class="btn btn-primary w-100 py-3" type="submit">Pošalji poruku</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div id="formStatus" class="mt-2"></div>
                                         </div>
                                     </div>
                                 </form>
+                                <!-- EmailJS SDK -->
+                                <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                                <script>
+                                    (function(){
+                                        emailjs.init("S_GwigeIkeAob1J38"); // Zameni sa tvojim EmailJS user ID
+                                    })();
+
+                                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                                        e.preventDefault();
+                                        emailjs.send("service_gegv7b7", "YOUR_TEMPLATE_ID", {
+                                            name: document.getElementById('name').value,
+                                            email: document.getElementById('email').value,
+                                            subject: document.getElementById('subject').value,
+                                            message: document.getElementById('message').value,
+                                            time: new Date().toLocaleString()
+                                        })
+                                        .then(function(response) {
+                                            document.getElementById('formStatus').innerHTML = '<span class="text-success">Poruka je uspešno poslata!</span>';
+                                            document.getElementById('contactForm').reset();
+                                        }, function(error) {
+                                            document.getElementById('formStatus').innerHTML = '<span class="text-danger">Došlo je do greške. Pokušajte ponovo.</span>';
+                                        });
+                                    });
+                                </script>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
