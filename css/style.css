@@ -346,12 +346,18 @@ h6,
 }
 
 /*** Classes ***/
+
 .classes-item {
   transition: 0.5s;
 }
-
 .classes-item:hover {
   margin-top: -10px;
+}
+.classes-item .h3 {
+  transition: color 0.5s;
+}
+.classes-item:hover .h3 {
+  color: var(--primary) !important;
 }
 
 /*** Team ***/
