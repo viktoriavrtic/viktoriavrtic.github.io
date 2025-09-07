@@ -84,14 +84,14 @@ h4,
 .display-6 {
   font-family: "Pacifico", "Caveat", "Noto Sans Display", "Noto Sans", Arial,
     sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h5,
 h6,
 .h5,
 .h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .font-secondary {
@@ -423,6 +423,14 @@ h6,
   background: var(--dark);
 }
 
+/*** Contact ***/
+div.contact-icon:hover {
+  scale: 1.1;
+}
+div.contact-icon {
+  transition: 0.3s;
+}
+
 /*** Footer ***/
 .footer .btn.btn-social {
   margin-right: 5px;
@@ -478,7 +486,7 @@ h6,
 }
 
 .footer .copyright a {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .footer-menu a {
@@ -496,4 +504,15 @@ h6,
   margin-right: 0;
   padding-right: 0;
   border-right: none;
+}
+
+#footer-contact-info a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#footer-contact-info a:hover {
+  color: var(--primary) !important;
+  transform: scale(1.1);
 }
