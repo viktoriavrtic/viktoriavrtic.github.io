@@ -116,8 +116,7 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Kontaktirajte nas</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Privremeno ut bol lorem kasd vero ipsum sedi
-                        eirmod sedi. Ipsum dijam justo sed rebum vero bol duo.</p>
+                    <p>Imate pitanje, želite upis ili saradnju? Pišite nam ili nas pozovite – rado ćemo odgovoriti na sve što vas zanima!</p>
                 </div>
                 <div class="row g-4 mb-5">
                     <div class="col-md-6 col-lg-4 text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -270,40 +269,34 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Galerija</h3>
-                        <div class="row g-2 pt-2">
+                        <div class="row g-2 pt-2" id="gallery">
                             <div class="col-4">
-                                <a href="img/classes-1.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-1.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Umetnost i crtanje - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="Galerija - umetnost i crtanje, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="img/classes-2.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-2.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Upravljanje bojama - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="Galerija - upravljanje bojama, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="img/classes-3.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-3.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Sport i ples - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="Galerija - sport i ples, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="img/classes-4.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-4.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Kreativne aktivnosti - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="Galerija - kreativne aktivnosti, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="img/classes-5.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-5.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Edukacija - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="Galerija - edukacija, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="img/classes-6.jpg" data-toggle="lightbox" data-gallery="gallery-small-images"
-                                    class="col-sm-4">
+                                <a href="img/classes-6.jpg" class="glightbox" data-gallery="footer-gallery" data-title="Igraonica - vrtić Viktoria, Čačak">
                                     <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="Galerija - igraonica, vrtić Viktoria, Čačak">
                                 </a>
                             </div>
@@ -347,7 +340,16 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/bs5-lightbox/index.bundle.min.js"></script>
+    <!-- GLightbox CSS/JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
