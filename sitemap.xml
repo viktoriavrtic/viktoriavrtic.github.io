@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://viktoriavrtic.github.io/</loc>
+  <loc>https://viktoria.rs/</loc>
   </url>
   <url>
-    <loc>https://viktoriavrtic.github.io/about.html</loc>
+  <loc>https://viktoria.rs/about.html</loc>
   </url>
   <url>
-    <loc>https://viktoriavrtic.github.io/classes.html</loc>
+  <loc>https://viktoria.rs/facility.html</loc>
   </url>
   <url>
-    <loc>https://viktoriavrtic.github.io/facility.html</loc>
+  <loc>https://viktoria.rs/contact.html</loc>
   </url>
   <url>
-    <loc>https://viktoriavrtic.github.io/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://viktoriavrtic.github.io/404.html</loc>
+  <loc>https://viktoria.rs/404.html</loc>
   </url>
 </urlset>

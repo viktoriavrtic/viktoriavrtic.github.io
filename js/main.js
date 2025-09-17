@@ -10,6 +10,12 @@
         setTimeout(function () {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
+            (function () {
+                // Ako je UNDER_CONSTRUCTION_MODE true, redirektuj na under-construction.html
+                if (window.UNDER_CONSTRUCTION_MODE === true && !window.location.pathname.endsWith('under-construction.html')) {
+                    window.location.href = 'under-construction.html';
+                }
+            })();
             }
         }, 1);
     };

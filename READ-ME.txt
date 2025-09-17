@@ -1,3 +1,7 @@
+Da biste aktivirali "under construction" mod na svim stranicama, dodajte sledeću liniju u <head> bilo kog HTML fajla:
+
+<script>window.UNDER_CONSTRUCTION_MODE = true;</script>
+
   =>  Template Name    : Kider - Preschool Website Template
 
   =>  Template Link    : https://htmlcodex.com/preschool-website-template

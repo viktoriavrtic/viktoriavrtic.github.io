@@ -1,17 +1,574 @@
 <!DOCTYPE html>
 <html lang="sr">
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=under-construction.html" />
-    <title>Sajt u izradi | Vrtić Viktoria Čačak</title>
+    <title>Vrtić Viktoria Čačak | Privatni vrtić za srećno detinjstvo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="vrtić, privatni vrtić, Čačak, predškolska ustanova, upis dece, programi za decu, pogodnosti, igraonica, edukacija, jaslice, razvoj dece, vaspitači, najbolji vrtić, Srbija">
+    <meta name="description"
+        content="Dobrodošli u vrtić Viktoria u Čačku – mesto gde deca rastu, uče i razvijaju se kroz igru, ljubav i pažnju stručnog tima. Saznajte više o našim programima i pogodnostima!">
+    <link rel="canonical" href="https://viktoria.rs/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viktoria.rs/">
+    <meta property="og:title" content="Vrtić Viktoria Čačak | Privatni vrtić za srećno detinjstvo">
+    <meta property="og:description"
+        content="Dobrodošli u vrtić Viktoria u Čačku – mesto gde deca rastu, uče i razvijaju se kroz igru, ljubav i pažnju stručnog tima. Saznajte više o našim programima i pogodnostima!">
+    <meta property="og:image" content="https://viktoria.rs/img/carousel-1.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://viktoria.rs/">
+    <meta property="twitter:title" content="Vrtić Viktoria Čačak | Privatni vrtić za srećno detinjstvo">
+    <meta property="twitter:description"
+        content="Dobrodošli u vrtić Viktoria u Čačku – mesto gde deca rastu, uče i razvijaju se kroz igru, ljubav i pažnju stručnog tima. Saznajte više o našim programima i pogodnostima!">
+    <meta property="twitter:image" content="https://viktoria.rs/img/carousel-1.jpg">
+    <!-- Google verify -->
+    <meta name="google-site-verification" content="_1ytQcPfm-QxZwdVsho-f59oxrlVDWhZlgD2I8qUzNo" />
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Preschool",
+            "name": "Vrtić Viktoria Čačak",
+            "image": "https://viktoria.rs/img/carousel-1.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Milana Jovanovića",
+                "addressLocality": "Čačak",
+                "postalCode": "32000",
+                "addressCountry": "RS"
+            },
+            "telephone": "+381211234567",
+            "email": "viktoriavrtic@gmail.com",
+            "url": "https://viktoria.rs/",
+            "description": "Pogodnosti vrtića Viktoria u Čačku – saznajte više o prednostima, upisu, programima i uslovima za decu. Privatni vrtić sa porodičnom atmosferom, igralištem, zdravom menzom i pozitivnim učenjem."
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=under-construction.html" />
-        <div style="text-align:center; margin-top:50px;">
-            <h1>Sajt u izradi</h1>
-            <p>Molimo vas da posetite <a href="under-construction.html">ovu stranicu</a>.</p>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Učitavanje...</span>
+            </div>
         </div>
-    </noscript>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Viktoria</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Početna</a>
+                    <a href="about.html" class="nav-item nav-link">O nama</a>
+
+                    <a href="facility.html" class="nav-item nav-link">Pogodnosti</a>
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill px-3">Kontaktirajte nas<i
+                        class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Vrtić Viktoria - deca u igri, Čačak">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Najbolji vrtić za vaše
+                                        dete</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Dobrodošli u vrtić Viktoria! Naša
+                                        misija je da svako dete raste srećno, sigurno i kreativno, uz podršku stručnog
+                                        tima i bogat program aktivnosti.</p>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Saznaj
+                                        više</a>
+                                    <a href=""
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Naši
+                                        razredi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Vrtić Viktoria - kreativne aktivnosti, Čačak">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Napravite svetliju
+                                        budućnost za vaše dete</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Pridružite nam se i zajedno gradimo
+                                        temelje za srećno detinjstvo i uspešan razvoj svakog mališana. U Viktoria vrtiću
+                                        deca uče kroz igru, istraživanje i prijateljstvo.</p>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Saznaj
+                                        više</a>
+                                    <a href=""
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Naši
+                                        razredi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Naše pogodnosti</h1>
+                    <p>U vrtiću Viktoria deca uživaju u sigurnom okruženju, modernim prostorijama i raznovrsnim
+                        sadržajima koji podstiču razvoj, kreativnost i zdrav način života.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa fa-home fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Porodična atmosfera</h3>
+                                <p class="mb-0">Topla, prijatna i podsticajna sredina u kojoj se svako dete oseća
+                                    sigurno i voljeno.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa fa-futbol fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Igralište</h3>
+                                <p class="mb-0">Veliko dvorište i moderno igralište za svakodnevnu igru, sport i
+                                    druženje na svežem vazduhu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa fa-apple-alt fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Zdrava menza</h3>
+                                <p class="mb-0">Domaći obroci pripremljeni po preporuci nutricioniste, prilagođeni
+                                    uzrastu i potrebama dece.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Pozitivno učenje</h3>
+                                <p class="mb-0">Podstičemo radoznalost, samostalnost i ljubav prema učenju kroz igru i
+                                    interaktivne radionice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Dobrodošli u naš vrtić</h1>
+                        <p>U našem vrtiću deca rastu, uče i razvijaju se u sigurnom, podsticajnom i radosnom okruženju.
+                            Posvećeni smo tome da svako dete bude prihvaćeno, srećno i motivisano za istraživanje sveta
+                            oko sebe.</p>
+                        <p class="mb-4">Kroz igru, druženje i raznovrsne aktivnosti podstičemo razvoj kreativnosti,
+                            samostalnosti i socijalnih veština. Naš tim vaspitača pruža podršku svakom detetu da otkrije
+                            svoje talente i stekne dragocena iskustva za ceo život.</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img class="rounded-circle flex-shrink-0" src="img/Portrait_Placeholder.jpg"
+                                alt="Viktor Novitović - Direktor i Osnivač" style="width: 45px; height: 45px;">
+                            <div class="ms-3">
+                                <h6 class="text-primary mb-1">Viktor Novitović</h6>
+                                <small>Direktor & Osnivač</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg"
+                                    alt="Vaspitač sa decom u vrtiću Viktoria, Čačak">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg"
+                                    alt="Deca crtaju u vrtiću Viktoria, Čačak">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg"
+                                    alt="Igraonica u vrtiću Viktoria, Čačak">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Call To Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg"
+                                    style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Postanite vaspitač</h1>
+                                <p class="mb-4">Ako volite rad sa decom, imate strpljenja i želite da doprinesete
+                                    njihovom razvoju kroz igru i učenje, pridružite se našem timu! U našem vrtiću cenimo
+                                    posvećenost, toplinu i kreativnost. Obezbeđujemo prijatno radno okruženje, mogućnost
+                                    stručnog usavršavanja i podršku kolektiva. Postanite deo zajednice koja neguje
+                                    radoznalost, maštu i srećno detinjstvo!</p>
+                                <a class="btn btn-primary py-3 px-5" href="contact.html">Kontaktirajte nas<i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+        <!-- Classes Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Naši programi</h1>
+                    <p>Programi su prilagođeni uzrastu i interesovanjima dece: umetnost, sport, jezici, nauka i još
+                        mnogo toga. Svako dete ima priliku da otkrije i razvije svoj talenat.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg"
+                                    alt="Umetnost i crtanje - čas u vrtiću Viktoria, Čačak">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <span class="d-block text-center h3 mt-3 mb-4">Umetnost i crtanje</span>
+                                <p class="text-center">Kroz crtanje, slikanje i modelovanje deca razvijaju maštu,
+                                    motoriku i izražavanje emocija.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg"
+                                    alt="Upravljanje bojama - čas u vrtiću Viktoria, Čačak">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <span class="d-block text-center h3 mt-3 mb-4">Upravljanje bojama</span>
+                                <p class="text-center">Učimo o bojama, oblicima i materijalima kroz igru i eksperimente,
+                                    podstičući radoznalost i timski rad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg"
+                                    alt="Sport i ples - čas u vrtiću Viktoria, Čačak">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <span class="d-block text-center h3 mt-3 mb-4">Sport i ples</span>
+                                <p class="text-center">Fizičke aktivnosti, ples i sport razvijaju koordinaciju, zdravlje
+                                    i timski duh kod dece.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Classes End -->
+
+        <!-- Gallery Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Galerija</h1>
+                    <p>Pogledajte deo atmosfere iz našeg vrtića kroz slike i video snimak.</p>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="img/gallery_1.jpeg" class="glightbox" data-gallery="main-gallery">
+                            <img class="img-fluid rounded w-100" src="img/gallery_1.jpeg" alt="Galerija slika 1">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="img/gallery_2.jpeg" class="glightbox" data-gallery="main-gallery">
+                            <img class="img-fluid rounded w-100" src="img/gallery_2.jpeg" alt="Galerija slika 2">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <a href="https://www.youtube.com/watch?v=AjhPLPkFJNw" class="glightbox"
+                            data-gallery="main-gallery">
+                            <div class="ratio ratio-16x9">
+                                <img src="https://img.youtube.com/vi/AjhPLPkFJNw/hqdefault.jpg" alt="Video iz vrtića"
+                                    class="img-fluid rounded w-100">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Iskustva roditelja</h1>
+                    <p>Pročitajte šta roditelji kažu o našem vrtiću i kako su njihova deca napredovala kroz igru, učenje
+                        i ljubav u Viktoria vrtiću.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">"Moja ćerka je svakog dana srećna kada ide u vrtić. Vaspitači su puni
+                            razumevanja i ljubavi, a program je raznovrstan i kreativan. Preporučujem svima!"</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Portrait_Placeholder.jpg"
+                                style="width: 90px; height: 90px;" alt="Jelena Petrović - roditelj, Čačak">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Jelena Petrović</h3>
+                                <span>Roditelj</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">"Zahvaljujući Viktoria vrtiću, naš sin je stekao mnogo prijatelja i naučio nove
+                            veštine. Posebno nam se dopadaju kreativne radionice i sportske aktivnosti."</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Portrait_Placeholder.jpg"
+                                style="width: 90px; height: 90px;" alt="Marko Jovanović - roditelj, Čačak">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Marko Jovanović</h3>
+                                <span>Roditelj</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-5">
+                        <p class="fs-5">"Topla preporuka za sve roditelje! Osoblje je profesionalno, a deca su uvek
+                            nasmejana i zadovoljna. Osećamo se sigurno znajući da je naše dete u dobrim rukama."</p>
+                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Portrait_Placeholder.jpg"
+                                style="width: 90px; height: 90px;" alt="Ana Nikolić - roditelj, Čačak">
+                            <div class="ps-3">
+                                <h3 class="mb-1">Ana Nikolić</h3>
+                                <span>Roditelj</span>
+                            </div>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div id="footer-contact-info" class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+            data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6">
+                        <h3 class="text-white mb-4">Kontakt</h3>
+                        <a href="https://www.google.com/maps?q=43.865143,20.36926" target="_blank">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Milana Jovanovića, Čačak 32000</p>
+                        </a>
+                        <a href="tel:+381211234567">
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+381 21 1234567</p>
+                        </a>
+                        <a href="mailto:viktoriavrtic@gmail.com">
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>viktoriavrtic@gmail.com</p>
+                        </a>
+                        <!-- <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Brzi linkovi</h3>
+                        <a href="index.html" class="btn btn-link text-white-50">Početna</a>
+                        <a href="about.html" class="btn btn-link text-white-50">O nama</a>
+
+                        <a href="facility.html" class="btn btn-link text-white-50">Pogodnosti</a>
+                        <a href="contact.html" class="btn btn-link text-white-50">Kontakt</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Galerija</h3>
+                        <div class="row g-2 pt-2" id="gallery">
+                            <div class="col-4">
+                                <a href="img/gallery_1.jpeg" class="glightbox" data-gallery="footer-gallery">
+                                    <img class="gallery-square-thumb" src="img/gallery_1.jpeg" alt="Proslava rođendana">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="img/gallery_2.jpeg" class="glightbox" data-gallery="footer-gallery">
+                                    <img class="gallery-square-thumb" src="img/gallery_2.jpeg"
+                                        alt="Radionica kreativnog crtanja">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="img/gallery_3.jpeg" class="glightbox" data-gallery="footer-gallery">
+                                    <img class="gallery-square-thumb" src="img/gallery_3.jpeg" alt="Igra u dvorištu">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="img/gallery_4.jpeg" class="glightbox" data-gallery="footer-gallery">
+                                    <img class="gallery-square-thumb" src="img/gallery_4.jpeg" alt="Zajednički ručak">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="img/gallery_5.jpeg" class="glightbox" data-gallery="footer-gallery">
+                                    <img class="gallery-square-thumb" src="img/gallery_5.jpeg"
+                                        alt="Nastup za roditelje">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.youtube.com/watch?v=AjhPLPkFJNw"
+                                    class="glightbox video-thumb-parent" data-gallery="footer-gallery"
+                                    style="position:relative;display:block;">
+                                    <img class="gallery-square-thumb"
+                                        src="https://img.youtube.com/vi/AjhPLPkFJNw/hqdefault.jpg"
+                                        alt="Video: Naš dan u vrtiću">
+                                    <span
+                                        style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2.5rem;color:#fff;background:rgba(0,0,0,0.5);border-radius:50%;padding:0.3em 0.4em;box-shadow:0 2px 8px rgba(0,0,0,0.4);">
+                                        <i class="fa fa-play"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Prijavite se za najnovije vesti i informacije.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Vaš email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Prijavi se</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a href="#">Viktoria</a>, Sva prava zadržana.<br />
+                            Designed By <a href="https://htmlcodex.com">HTML Codex</a> Distributed
+                            By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- GLightbox CSS/JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
